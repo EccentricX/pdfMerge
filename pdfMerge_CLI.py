@@ -3,12 +3,7 @@ def oS():
 	global S
 	S=''
 	s=input('Enter the directory of the file:');print()
-	s+='\\'
-	for os1 in s:
-		if os1=='\\':
-			S+='/'
-		else:
-			S+=os1
+	S=s.replace('\\','/')
 	os.chdir(S)
 	global a
 	a=os.listdir(S)
