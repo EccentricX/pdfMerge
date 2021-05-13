@@ -13,7 +13,7 @@ def oS():
 	OS_Id=1
 	for os2 in a:
 		if len(os2)>4:
-			if os2[-4]+os2[-3]+os2[-2]+os2[-1]=='.pdf':
+			if os2.endswith('.pdf'):
 				OS_dict[OS_Id]=os2
 				OS_Id+=1
 	for os3 in OS_dict:
@@ -44,13 +44,13 @@ elif code=='':
 else:
 	exit()
 def show():
-                        f=open('HELPING GUIDE FOR USING PDF MERGER.html','w')
-                        data=f.write('<HTML>\n')
-                        data=f.write("<A HREF='https://drive.google.com/file/d/121Eu5OFVGEyhusmgPIGGnk3lo7ei7tGF/view?usp=drivesdk'><font size='200' face='ALGERIAN' color=''RED'><B><U>CLICK TO OPEN GUIDE SHEET</U></B></font></br></A>\n")
-                        data=f.write("<A HREF='https://drive.google.com/file/d/12j7RbFWAjuj8HOcSXqvPP-qffmAWCqWx/view?usp=drivesdk'><font size='200' face='ALGERIAN' color=''RED'><B><U>CLICK TO GET PYTHON CODE OF THIS PROGRAM</U></B></font></A>\n")
-                        data=f.write('</BODY>\n')
-                        data=f.write('</HTML>\n')
-                        f.close()
+	f=open('HELPING GUIDE FOR USING PDF MERGER.html','w')
+	data=f.write('<HTML>\n')
+	data=f.write("<A HREF='https://drive.google.com/file/d/121Eu5OFVGEyhusmgPIGGnk3lo7ei7tGF/view?usp=drivesdk'><font size='200' face='ALGERIAN' color=''RED'><B><U>CLICK TO OPEN GUIDE SHEET</U></B></font></br></A>\n")
+	data=f.write("<A HREF='https://drive.google.com/file/d/12j7RbFWAjuj8HOcSXqvPP-qffmAWCqWx/view?usp=drivesdk'><font size='200' face='ALGERIAN' color=''RED'><B><U>CLICK TO GET PYTHON CODE OF THIS PROGRAM</U></B></font></A>\n")
+	data=f.write('</BODY>\n')
+	data=f.write('</HTML>\n')
+	f.close()
 def show2():
 	print('Welcome every one to another program.\nIn ths program you can merge your multiple PDF files into one single file.');print();print('\tHaving a tutorial guide? If yes press enter else\n Enter your name and then press enter.')
 	o=input()
