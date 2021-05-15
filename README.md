@@ -6,7 +6,7 @@ Utility tool for merging pdf files together made using python and PyPDF3 .
 * os
 * PyPDF3
 * datetime  
-## For GUI version
+### For GUI version
 * os
 * PyPDF3
 * tkinter
